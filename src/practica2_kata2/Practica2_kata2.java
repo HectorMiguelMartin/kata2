@@ -17,13 +17,13 @@ public class Practica2_kata2 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        Integer[] data = {1,4,5,5,4,6,1,2,4,5,6,2,5,6,3,5,5,6,2,5,1};
+        String[] data = {"Rosa", "Pepe", "María", "Pepe", "Pepe", "Rosa"};
         
         Histogram histo = new Histogram(data);
         
-        Map<Integer,Integer> histogr = histo.getHistogram();
+        Map<String,Integer> histogr = histo.getHistogram();
         
-        for (Map.Entry<Integer, Integer> entry: histogr.entrySet()) {
+        for (Map.Entry<String, Integer> entry: histogr.entrySet()) {
             System.out.println("Key =" + entry.getKey() + ", Value =" + entry.getValue());
         }
         
